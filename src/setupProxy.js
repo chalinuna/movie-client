@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.use(
     "/api",
     createProxyMiddleware({
-      target: "http://www.movieapp.shop/",
+      target: "Movie-env.eba-e2vabrjf.ap-northeast-1.elasticbeanstalk.com",
       changeOrigin: true,
     })
   );
